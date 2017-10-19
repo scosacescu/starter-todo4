@@ -17,4 +17,3 @@ application/logs/*
 /vendor/
 /nbproject/
 .idea/
-tmp/
