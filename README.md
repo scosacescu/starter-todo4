@@ -1,5 +1,6 @@
-# starter-todo
-Starter project for COMP4711 lab 5, Fall 2017
+# TODO Application
 
-It "works" out of the box, sort of, but needs beefing up :(
-Your job is to fix it, per lab 5 directions :)
+#### Fall 2017 Group 4 (Lab 5/6)
+
+Comp 4711 TODO Application with TODO item maintenance
+
