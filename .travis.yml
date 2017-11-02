@@ -17,7 +17,6 @@ php:
     - 7.0
     - 7.1
 
-
 matrix:
   fast_finish: true
 
@@ -31,10 +30,6 @@ sudo: false
 install:
   # Install composer packages, will also trigger dump-autoload
   - travis_retry composer install --no-interaction
-  # Install coveralls.phar
-  - wget -c -nc --retry-connrefused --tries=0 https://github.com/satooshi/php-coveralls/releases/download/v1.0.1/coveralls.phar
-  - chmod +x coveralls.phar
-  - php coveralls.phar --version
 
 # Create a storage folder for Coverage report
 before_script:
@@ -49,7 +44,9 @@ script:
 #after_script:
 # Tell Travis CI to monitor only 'master' branch
 branches:
-  only: master
+  only:
+    - master
+    - develop
 
 # Configure email notifications
 notifications:
