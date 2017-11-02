@@ -19,21 +19,30 @@ class Task extends CI_Model
 
   public function setTask($value)
   {
-    $this->task = $value;
+    if (preg_match('/^[A-Z0-9 ]+$/i', $value) && strlen($value) <= 64) {
+      $this->task = $value;
+    }
   }
 
   public function setPriority($value)
   {
-    $this->priority = $value;
+    if (is_int($value) && $value < 5) {
+      $this->priority = $value;
+    }
   }
 
   public function setSize($value)
   {
-    $this->size = $value;
+    if (is_int($value) && $value < 5) {
+      $this->size = $value;
+    }
   }
 
-  public function setGroup($value)
+  public
+  function setGroup($value)
   {
-    $this->group = $value;
+    if (is_int($value) && $value < 6) {
+      $this->group = $value;
+    }
   }
 }
