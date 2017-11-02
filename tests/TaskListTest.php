@@ -6,7 +6,6 @@ class TaskListTest extends PHPUnit_Framework_TestCase
 
   public function setUp()
   {
-    // Load CI instance normally
     $this->CI = &get_instance();
   }
 
