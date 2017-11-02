@@ -37,7 +37,7 @@ before_script:
 
 # Testing the app (see phpunit.xml), generating Code Coverage report
 script:
-  - ./phpunit
+  - phpunit
 
 
 #after_script:
