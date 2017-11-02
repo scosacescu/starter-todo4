@@ -2,7 +2,7 @@
 
 require '../application/entities/Task.php';
 
-class TaskTest extends PHPUnit_Framework_TestCase
+class TaskTest extends \PHPUnit_Framework_TestCase
 {
   private $testTask;
 
