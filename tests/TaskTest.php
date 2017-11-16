@@ -14,7 +14,7 @@ class TaskTest extends TestCase
 
   public function testTaskEntity()
   {
-    $taskSet = $this->testTask->setTask('hello');
+    $taskSet = $this->testTask->setTaskName('hello');
     $sizeSet = $this->testTask->setSize(3);
     $prioritySet = $this->testTask->setPriority(3);
     $groupSet = $this->testTask->setGroup(3);
@@ -27,7 +27,7 @@ class TaskTest extends TestCase
 
   public function testTaskEntityFailure()
   {
-    $taskSet = $this->testTask->setTask('');
+    $taskSet = $this->testTask->setTaskName('');
     $sizeSet = $this->testTask->setSize(6);
     $prioritySet = $this->testTask->setPriority(6);
     $groupSet = $this->testTask->setGroup(6);

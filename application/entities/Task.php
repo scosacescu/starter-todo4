@@ -4,12 +4,12 @@ require 'Entity.php';
 
 class Task extends Entity
 {
-  private $task, $priority, $size, $group;
+  private $id, $taskName, $priority, $size, $group, $deadLine, $status, $flag;
 
-  public function setTask($value)
+  public function setTaskName($value)
   {
     if (preg_match('/^[A-Z0-9 ]+$/i', $value) && strlen($value) <= 64) {
-      $this->task = $value;
+      $this->taskName = $value;
       return true;
     }
     return false;
@@ -33,8 +33,7 @@ class Task extends Entity
     return false;
   }
 
-  public
-  function setGroup($value)
+  public function setGroup($value)
   {
     if (is_int($value) && $value < 6) {
       $this->group = $value;
