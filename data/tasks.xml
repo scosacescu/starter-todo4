@@ -51,4 +51,15 @@
         <status/>
         <flag/>
     </task>
+    <task>
+        <id>8</id>
+        <task>Another One</task>
+        <priority>3</priority>
+        <size>2</size>
+        <group>2</group>
+        <deadline/>
+        <status>1</status>
+        <flag/>
+        <submit>Update the TODO task</submit>
+    </task>
 </tasks>

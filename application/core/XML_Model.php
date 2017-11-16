@@ -33,6 +33,7 @@ class XML_Model extends Memory_Model
       foreach ($tasks as $task){
         $taskArray = (array)$task;
         $taskKeys = array_keys($taskArray);
+        $this->_fields = $taskKeys;
         $record = new stdClass();
         foreach($taskKeys as $taskKey){
           $record->{$taskKey} = (string)$taskArray[$taskKey];
