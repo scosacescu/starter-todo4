@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<tasks>
+    <task>
+        <id>2</id>
+        <taskname>Mow the lawn</taskname>
+        <priority>2</priority>
+        <size>3</size>
+        <group>2</group>
+        <deadline></deadline>
+        <status>1</status>
+        <flag></flag>
+    </task>
+    <task>
+        <id>3</id>
+        <taskname>Wash the car</taskname>
+        <priority>3</priority>
+        <size>2</size>
+        <group>1</group>
+        <deadline></deadline>
+        <status></status>
+        <flag> </flag>
+    </task>
+    <task>
+        <id>4</id>
+        <taskname>Paint the fence</taskname>
+        <priority>1</priority>
+        <size>2</size>
+        <group>1</group>
+        <deadline></deadline>
+        <status></status>
+        <flag></flag>
+    </task>
+    <task>
+        <id>6</id>
+        <taskname>Intramural hockey game</taskname>
+        <priority>1</priority>
+        <size>2</size>
+        <group>4</group>
+        <deadline></deadline>
+        <status>2</status>
+        <flag></flag>
+    </task>
+    <task>
+        <id>7</id>
+        <taskname>Canucks hockey game</taskname>
+        <priority>3</priority>
+        <size>3</size>
+        <group>4</group>
+        <deadline>20170305</deadline>
+        <status></status>
+        <flag></flag>
+    </task>
+</tasks>
